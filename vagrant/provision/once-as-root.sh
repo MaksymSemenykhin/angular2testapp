@@ -10,7 +10,7 @@ source /var/www/vagrant/provision/common.sh
 
 info "Provision-script user: `whoami`"
 
-#This boot parameter controls the type of user interface used for the installer. 
+#This boot parameter controls the type of user interface used for the installer.
 #https://www.debian.org/releases/sarge/s390/ch05s02.html.en
 export DEBIAN_FRONTEND=noninteractive
 
@@ -41,16 +41,24 @@ info "[2] UPDATING AND UPGRADING SYSTEM ..."
 apt-get update
 apt-get upgrade -y
 
-info "[3] Node and NPM"
-apt-get install nodejs npm -yq
-nodejs -v
-npm -v
+info "[3] NGINX..."
+apt-get install nginx -yq
+cp /var/www/vagrant/default /etc/nginx/sites-available/
+service nginx reload
 
+info "[4] Node and NPM"
+#https://github.com/nodejs/node-v0.x-archive/issues/3911
+apt-get install nodejs nodejs-legacy npm -yq
+#npm install -g angular-cli
 
 info "Install additional software"
 apt-get install git curl vim mc htop -yqq
 
 chmode 0777 /usr/local/lib
+
+nodejs -v
+npm -v
+nginx -v
 
 duration=$SECONDS
 info "done in $(($duration / 60)) minutes and $(($duration % 60)) seconds"
