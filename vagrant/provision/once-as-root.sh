@@ -47,14 +47,17 @@ cp /var/www/vagrant/default /etc/nginx/sites-available/
 service nginx reload
 
 info "[4] Node and NPM"
-#https://github.com/nodejs/node-v0.x-archive/issues/3911
-apt-get install nodejs nodejs-legacy npm -yq
-#npm install -g angular-cli
 
+#Both the CLI and generated project have dependencies that require Node 6.9.0 or higher, together with NPM 3 or higher.
+#https://github.com/nodesource/distributions
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+apt-get install -y nodejs
+
+npm install -g @angular/cli
+
+##https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 info "Install additional software"
 apt-get install git curl vim mc htop -yqq
-
-chmode 0777 /usr/local/lib
 
 nodejs -v
 npm -v
