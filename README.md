@@ -1,3 +1,11 @@
+[![Build Status](https://travis-ci.org/MaksymSemenykhin/angular2testapp.svg?branch=master)](https://travis-ci.org/MaksymSemenykhin/angular2testapp)
+
+[![Code Climate](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/gpa.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp)
+
+[![Test Coverage](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/coverage.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/coverage)
+
+[![Issue Count](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/issue_count.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp)
+
 # Someapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
