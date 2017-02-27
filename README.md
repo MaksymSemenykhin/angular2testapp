@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/MaksymSemenykhin/angular2testapp.svg?branch=master)](https://travis-ci.org/MaksymSemenykhin/angular2testapp)
 [![Code Climate](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/gpa.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp)
+[![Dependency Status](https://www.versioneye.com/user/projects/58b45f979ceb450051827205/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/58b45f979ceb450051827205)
+
 [![Test Coverage](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/coverage.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/coverage)
 [![Issue Count](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp/badges/issue_count.svg)](https://codeclimate.com/github/MaksymSemenykhin/angular2testapp)
 
