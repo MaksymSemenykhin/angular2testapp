@@ -18,7 +18,9 @@
     "test": "concurrently \"npm run build:watch\" \"karma start karma.conf.js\"",
     "pretest:once": "npm run build",
     "test:once": "karma start karma.conf.js --single-run",
-    "lint": "tslint ./src/**/*.ts -t verbose"
+    "lint": "tslint ./src/**/*.ts -t verbose",
+    "packages:update": "npm-check-updates -u",
+    "packages:install": "npm install"
   },
   "keywords": [],
   "author": "",
@@ -59,7 +61,7 @@
     "@types/node": "^7.0.5",
     "@types/jasmine": "2.5.43",
 
-    "npm-check-updates":"3.10.10"
+    "npm-check-updates":"2.10.3"
   },
   "repository": {}
 }
