@@ -1,8 +1,0 @@
-engines: 
-  eslint: 
-    channel: eslint-3
-    config: 
-      extensions: 
-        - .es6
-        - .js
-    enabled: true
