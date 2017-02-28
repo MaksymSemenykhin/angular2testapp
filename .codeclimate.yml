@@ -1,9 +1,8 @@
 engines: 
-  eslint:
-    enabled: true
-    channel: "eslint-3"
-      config:
-        extensions:
+  eslint: 
+    channel: eslint-3
+    config: 
+      extensions: 
         - .es6
-        - .js         
-    
+        - .js
+    enabled: true
