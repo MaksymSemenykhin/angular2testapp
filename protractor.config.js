@@ -171,11 +171,11 @@ function Reporter(options) {
   var _pad;
   function log(str, indent) {
     _pad = _pad || '';
-    if (indent == -1) {
+    if ( -1 === indent) {
       _pad = _pad.substr(2);
     }
     console.log(_pad + str);
-    if (indent == 1) {
+    if (1 === indent) {
       _pad = _pad + '  ';
     }
   }
