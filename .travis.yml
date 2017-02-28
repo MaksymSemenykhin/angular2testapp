@@ -18,3 +18,6 @@ script:
   - npm run lint
   - npm run test:once
   - npm run e2e
+addons:
+    code_climate:
+        repo_token: 93f2751524a03e2b8c0dc0452d263264e26a26b905a92f0202dedc79b26d5d77
