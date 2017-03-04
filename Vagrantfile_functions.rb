@@ -38,7 +38,7 @@ def draw_intro(machine_name)
   url ='http://artii.herokuapp.com/make?text='+machine_name+' server'+'&font=big';
   page_content = open(url)
 
-  File.open(file, 'w+') { |file| file.write(page_content) }
+  File.open(file, 'w+') { |_file| _file.write(page_content) }
 
   puts page_content
 

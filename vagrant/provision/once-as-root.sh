@@ -71,8 +71,11 @@ apt-get install git curl vim mc htop -yq
 #sudo echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
 #sudo sysctl -p /etc/sysctl.conf
 
+info "nodejs:"
 nodejs -v
+info "npm:"
 npm -v
+info "nginx:"
 nginx -v
 
 duration=$SECONDS
