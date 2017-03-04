@@ -1,1 +1,0 @@
-{"virtualbox":{"vagrant-root":{"id":"vagrant-root","owner":"www-data","group":"vagrant","mount_options":["dmode=775","fmode=775"],"guestpath":"/var/www","hostpath":"D:/angular2testapp","disabled":false,"__vagrantfile":true}}}
